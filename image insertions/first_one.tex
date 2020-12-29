@@ -1,0 +1,49 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{float}
+
+% using graphicx package for image insertions
+
+\begin{document}
+
+  \begin{figure}
+    \includegraphics[width=\linewidth]{Personal.jpeg}
+    \caption{My photo}
+    \label{fig:aman}
+  \end{figure}
+
+  Figure \ref{fig:aman} shows my personal photo
+  % this is the first example now moveon to second one
+  \begin{figure}[h!]
+    \centering
+    \begin{subfigure}[t!]{0.4\linewidth}
+    \includegraphics[width=\linewidth]{anime.jpeg}
+    \caption{pikachu.}
+  \end{subfigure}
+  \begin{subfigure}[t!]{0.4\linewidth}
+    \includegraphics[width=\linewidth]{pikachu.jpg}
+    \caption{Another version of pikachu.}
+  \end{subfigure}
+  \caption{Different Avatars of pikachu.}
+  \label{fig:pikachu}
+  \end{figure}
+  \begin{figure}[H]
+    \centering
+    \begin{subfigure}[t]{0.4\linewidth}
+    \includegraphics[width=\linewidth]{anime.jpeg}
+    \caption{pikachu.}
+  \end{subfigure}
+  \begin{subfigure}[t]{0.4\linewidth}
+    \includegraphics[width=\linewidth]{pikachu.jpg}
+    \caption{Another version of pikachu.}
+  \end{subfigure}
+  \begin{subfigure}[t]{0.5\linewidth}
+    \includegraphics[width=\linewidth]{Personal.jpeg}
+    \caption{myself.}
+  \end{subfigure}
+  \caption{me lover of pikachu.}
+  \label{fig:more}
+  \end{figure}
+\end{document}
