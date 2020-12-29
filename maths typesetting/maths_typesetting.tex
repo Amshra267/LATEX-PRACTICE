@@ -1,0 +1,96 @@
+\documentclass{article}
+% importing amsmath package for using it later
+\usepackage{amsmath}
+
+\begin{document}
+  first time written maths equations in latex
+  using inline and environment type maths setting\\
+  $$f(x)=x$$ %inline method
+  \begin{equation}
+    % without using any package hence the number will come automatically
+    f(x) = x^2+2x+1
+  \end{equation}
+  \begin{equation*}
+    % using amsmath package to remove the automatic numbering
+    f(x) = x^2+2x+1
+  \end{equation*}
+  \begin{align*}
+    % using align* to write multiple equations simultaneously with alignment on &
+    a+b&=c\\
+    b+d&=e
+  \end{align*}
+  \begin{align*}
+    % another example to show alignment
+    a+b&=c\\
+    b&=d+e
+  \end{align*}
+  \begin{align*}
+  c &= \begin{matrix}
+    % matrix without braces
+    1&2\\
+    2&2
+  \end{matrix}\\
+  u &=[
+  \begin{matrix}
+    % using small braces not suitable
+    1&2\\
+    2&2
+  \end{matrix}
+  ]\\
+  % now typesetting using commands
+  v&=\left[
+  \begin{matrix}
+    1&2\\
+    2&2
+  \end{matrix}
+  \right]\\
+  G(x)&=\left(\frac{1}{x^3}\right)\\
+  F(\alpha) &= \int^\alpha_1\frac{1}{x}dx
+  \end{align*}
+  % now applying all the different commands for different common functions
+  \begin{align*}
+    % firstly all trignometric functions
+    f(x)&=\sin{x}\\
+    % below command is different in the sense that sin is written in italics and not User friendly
+    g(x)&=sinx\\  
+    h(x)&=\csc{x}\\
+    %now coming the integral type ones
+    a &= \int_a^bxdx\\ %here lim a will be lower lim
+    c &= \int^a_bxdx\\ %here a will be upper lim
+    h(x) &= \int_Dxdx\\
+    u(x,y) &= \iint_D f(x,y)dxdy\\
+    v &= \oint_DFds\\
+    %now some inbuilt matrix command
+    M &= \begin{vmatrix}
+      1&0\\
+      0&1
+    \end{vmatrix}\\
+    N&=\begin{bmatrix}
+      1&0\\
+      0&1
+    \end{bmatrix}\\
+    D&=\begin{pmatrix}
+      1&0\\
+      0&1
+    \end{pmatrix}\\
+    c&=\det{\begin{vmatrix}
+      1&0\\
+      0&1
+    \end{vmatrix}}\\
+    % using some dot type commands
+    P&=\begin{bmatrix}
+      1&0&0&0\\
+      1 & 0 & \cdots & 0\\
+      \vdots&\vdots&\ddots&\vdots\\
+      1&0&0&0
+    \end{bmatrix}\\
+    % using some miscellanous function
+    f(x)&=\log{x}\\
+    g(x)&=\log_a{x}\\
+    h(x)&=\sqrt{x}\\
+    u(x,n)&=\sqrt[n]{x}\\
+    \phi(x)&=\frac{f(x)}{g(x)}
+  \end{align*}
+  
+  Now above are some few commands for typesetting maths  
+\end{document}
